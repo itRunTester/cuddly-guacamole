@@ -1,0 +1,70 @@
+print('Witaj Swiecie!')
+print('Jak masz na imię?') #Prośba o podanie imienia.
+myName=input()
+print('Miło Cię poznać, '+myName+'.')
+print('Jaka jest Twoja ulubiona cyfra ?')
+cyfra1=int(0)
+cyfra2=int(9)
+cyfra3=int(18)
+ulubiona_cyfra=input()
+ulubiona_cyfra=int(ulubiona_cyfra)
+if len(myName) >= ulubiona_cyfra:
+    ulubiona_cyfra= ulubiona_cyfra + len(myName)
+    print('Mam dla Ciebie zadanie, chcesz usłyszeć?')
+    answer=input()
+if cyfra1 <= ulubiona_cyfra >=len(myName):
+    print('Python dodał do Twojej cyfry extra '+str(len(myName))+' punktów.')
+else:
+    print('To nie jest cyfra, to liczba ;)Cyfry to od 0 do 9. Wybierz prosze dowolną jeśli nie masz wśród cyfr ulubionej  ')
+    ulubiona_cyfra1=input()
+    ulubiona_cyfra=ulubiona_cyfra1
+    ulubiona_cyfra=int(ulubiona_cyfra)
+    if cyfra1 <= ulubiona_cyfra <=cyfra2:
+        print('Mam dla Ciebie zadanie, chcesz usłyszeć?')
+        answer=input()
+if answer== 'tak':
+      print('OK, zatem posłuchaj uważnie.')
+      print('Stwórz w Python wyrażenie gdzie po lewej stronie będzie Twoje imie, po prawej cyfra, którą podałeś')
+      print('Twoje imię jest przypisane do zmiennej myName, cyfra do zmiennej ulubiona_cyfra')
+      print('Wyrażenie zapisz ze znakiem > większości imienia nad cyfrą')
+      print('Rezultatem, któy musisz osiągnąc jest True.')
+      print('Zastosuj poznane do tej pory funkcje aby osiągnąc rezultat.')
+      print('UWAGA: Rozwiązanie musi być logiczne. Nie można nadpisywać zmiennych dowolnymi cyframi/liczbami. NIe można też dodawać ani odejmowac ')
+      print('Dozwolone jest jedynie osiągnięcie rezultatu za pomocą funkcji')
+      print('Oczekiwany rezultat: myName>ulubiona_cyfra')
+      print('True')
+      print('Powodzenia!!!')
+elif answer== 'nie':
+      print('Ale leń z Ciebie! NIe jest wstydem nie wiedzieć , ale wstydem jest nawet nie chcieć się dowiedzieć')
+elif answer== 'nie wiem':
+      print('To się szybko zastanów bo nie mam całego dnia! Więc chcesz zadanie?')
+answer2=input()
+if answer2== 'tak':
+      print('OK, zatem posłuchaj uważnie.')
+      print('Stwórz w Python wyrażenie gdzie po lewej stronie będzie Twoje imie, po prawej cyfra, którą podałeś')
+      print('Twoje imię jest przypisane do zmiennej myName, cyfra do zmiennej ulubiona_cyfra')
+      print('Wyrażenie zapisz ze znakiem > większości imienia nad cyfrą')
+      print('Rezultatem, któy musisz osiągnąc jest True.')
+      print('Zastosuj poznane do tej pory funkcje aby osiągnąc rezultat.')
+      print('UWAGA: Rozwiązanie musi być logiczne. Nie można nadpisywać zmiennych dowolnymi cyframi/liczbami. NIe można też dodawać ani odejmowac ')
+      print('Dozwolone jest jedynie osiągnięcie rezultatu za pomocą funkcji')
+      print('Oczekiwany rezultat: myName>ulubiona_cyfra')
+      print('True')
+      print('I jeszcze jedno.W związku z tym że najpierw nie byłeś zdecydowany czy chcesz usłyszeć zadanie to otrzymujesz 9 punktów karnych.')
+      print('Python zadbał aby punkty karne nie zgubiły sie i dodał je do cyfry, która wybrałeś.')
+      print('Weź ten fakt pd uwage podczas rozwiązywania zadania ;) ')
+      print('Powodzenia!!!')
+      ulubiona_cyfra=int(ulubiona_cyfra)+9
+elif answer2== 'nie':
+      print('Ale leń z Ciebie! NIe jest wstydem nie wiedzieć , ale wstydem jest nawet nie chcieć się dowiedzieć')
+elif answer2== 'nie wiem':
+      print('Wypierdalaj!Nie lubie niezdecydowanych ludzi')
+      
+#Rozwiązanie
+      # zmienna "myName" jest ciągiem tekstowym. NIe jest możliwe zastosowania znaku > w ciągu tekstowym
+      # 1. Zamiana ciągu tekstowego na cyfrę przy użyciu funkcji len
+      # zmienna "ulubiona_cyfra" jest zapisana w postaci cyfry
+      
+      
+      
+
